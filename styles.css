@@ -1,12 +1,10 @@
-/*  your css code here. If applicable */
 /* Grid Container */
 .grid-container {
-  display: flex;
-  flex-wrap: wrap;              /* Allows items to move to next row */
-  justify-content: center;      /* Center horizontally */
-  align-items: center;          /* Center vertically */
-  gap: 20px;                    /* Space between items */
-  min-height: 100vh;            /* Full viewport height */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 10px 10px;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* Grid Items */
@@ -17,7 +15,7 @@
   border-radius: 5px;
   font-size: 40px;
 
-  display: flex;                /* Center number inside card */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
