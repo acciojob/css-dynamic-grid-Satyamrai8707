@@ -1,1 +1,23 @@
 /*  your css code here. If applicable */
+/* Grid Container */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;              /* Allows items to move to next row */
+  justify-content: center;      /* Center horizontally */
+  align-items: center;          /* Center vertically */
+  gap: 20px;                    /* Space between items */
+  min-height: 100vh;            /* Full viewport height */
+}
+
+/* Grid Items */
+.grid-item {
+  background-color: lightgray;
+  height: 150px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 40px;
+
+  display: flex;                /* Center number inside card */
+  justify-content: center;
+  align-items: center;
+}
